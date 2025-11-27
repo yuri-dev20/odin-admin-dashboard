@@ -4,5 +4,125 @@
 }
 
 body {
-    height: 100vh;
+    background: #eff0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar header header header"
+    "sidebar section section section"
+    "sidebar section section section";
+}
+
+.header {
+    background: #fff;
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    "header-search header-search user-info"
+    "user-presentation user-presentation header-nav";
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.393);
+}
+
+.header-search {
+    grid-area: header-search;
+    grid-column: 1;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content 1fr;
+    align-items: center;
+    gap: .5rem;
+    margin: 20px;
+}
+
+#search-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.header-search input {
+    background-color: rgba(125, 157, 166, 0.33);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.user-info {
+    grid-area: user-info;
+    grid-column: 3;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+#bell-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+#user-icon {
+    display: block;
+    background-color: rgb(255, 255, 0);
+    border-radius: 100%;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-presentation {
+    grid-area: user-presentation;
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content 1fr;
+    gap: .9em;
+    margin: 20px;
+}
+
+.welcome-msg {
+    font-weight: bold;
+}
+
+.welcome-msg p:last-child {
+    font-size: 20px;
+}
+
+.header-nav {
+    margin-top: 20px;
+    grid-area: header-nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-nav li {
+    list-style: none;
+}
+
+.header-nav li button{
+    color: #fff;
+    font-weight: bold;
+    background: rgba(103, 44, 103, 0.724);
+    width: 100px;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.section {
+    grid-area: section;
 }
