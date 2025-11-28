@@ -217,6 +217,10 @@ body {
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.393);
 }
 
+.project-description {
+    color: rgba(0, 0, 0, 0.749);
+}
+
 .project-interaction {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -255,6 +259,10 @@ body {
     align-items: center;
     border-radius: 15px;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.393);
+}
+
+.announcement h5 {
+    margin-bottom: 10px;
 }
 
 .trending-list {
