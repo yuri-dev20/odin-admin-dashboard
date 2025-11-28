@@ -208,6 +208,37 @@ body {
     gap: 5em;
 }
 
+.project {
+    background: var(--clr-white);
+    padding: 15px;
+    border-left: 8px solid var(--clr--purple);
+    border-radius: 10px;
+    display: grid;
+    gap: 50px;
+}
+
+.project-interaction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-interaction ul {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.project-interaction ul li {
+    list-style: none;
+}
+
+.project-interaction ul li img {
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
 .section-sidebar {
     display: grid;
     gap: .5em;
